@@ -1,0 +1,76 @@
+* Home Assignment 01
+
+** Task 1
+Какой результат даст выражение?
+#+BEGIN_SRC python
+  True + 4
+#+END_SRC
+Напишите "ошибка" в случае, если код выдаст ошибку.
+
+*** Ответ:
+~5~
+
+** Task 2
+Что выведет следующий код:
+#+BEGIN_SRC python
+  list(range(3))[3]
+#+END_SRC
+Напишите "ошибка" в случае, если код выдаст ошибку.
+
+*** Ответ:
+~ошибка~
+
+** Task 3
+Что будет выведено на экран после выполнения данного кода?
+#+BEGIN_SRC python
+  text = 'hello'
+
+  print(text[4:100])
+#+END_SRC
+Напишите "ошибка" в случае, если код выдаст ошибку.
+
+*** Ответ:
+~o~
+
+** Task 4
+Рассмотрим код:
+#+BEGIN_SRC python
+  def square(x):
+      return x**2;
+
+  numbers = [1, 2, 3, 4]
+
+  something = list(map(lambda x: square(x), numbers))
+  print(something[2])
+#+END_SRC
+Что будет выведено на экран?
+
+*** Ответ:
+~9~
+
+** Task 5
+Дан код:
+#+BEGIN_SRC python
+  file = open('out.txt', 'w')
+  for i in range(5):
+      file.write(str(i));
+
+  file.close()
+  file = open('out.txt', 'w')
+  for i in range(5, 10):
+      file.write(str(i));
+  file.close()
+#+END_SRC
+
+Что будет записано в файл?
+
+*** Выберите один вариант из списка
+- [ ] 12345
+- [ ] 123456789
+- [x] 56789
+- [ ] 5678910
+- [ ] 1234
+
+
+** Task 6-11
+Look at ~here's link to the notebook~
