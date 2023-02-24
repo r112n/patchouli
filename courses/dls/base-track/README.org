@@ -1,6 +1,6 @@
 #+TITLE: Deep Learning School: base-track
 [[https://dls.samcs.ru/ru/base-track][Course site]]
-
+[[https://stepik.org/course/135002][Stepik page]]
 
 * Lessons list
 - [[./lesson-01][01. Инструменты и язык Python]]. [[./ha-01][Домашнее задание]]
