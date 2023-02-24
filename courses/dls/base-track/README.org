@@ -1,0 +1,7 @@
+#+TITLE: Deep Learning School: base-track
+[[https://dls.samcs.ru/ru/base-track][Course site]]
+
+
+* Lessons list
+- [[./lesson-01][01. Инструменты и язык Python]]. [[./ha-01][Домашнее задание]]
+  
