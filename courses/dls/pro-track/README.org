@@ -1,6 +1,8 @@
 #+TITLE: Deep Learning School: pro-track
 [[https://dls.samcs.ru/ru/pro-track][Course size]]
+
 [[https://stepik.org/course/135003][Stepik page]]
 
 * Lessons list
-- Lesson 01 - [[./ha-01][HA-01]]
+- [[./lesson-01/README.org][Lesson 01]] - [[./lesson-01/seminar/][Seminar 01]] - [[./ha-01][HA-01]]
+- Lesson 02 - Seminar 02 - HA-02
