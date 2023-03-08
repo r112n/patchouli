@@ -1,0 +1,86 @@
+#+TITLE: C++ basics 
+
+* Первая программа
+#+BEGIN_SRC C++ :results raw
+  #include <iostream>
+
+  int main() {
+    std::cout << "Hello, World\n";
+    return 0;
+  }
+#+END_SRC
+
+* Фундаментальные типы и операции над ними
+More info: [[https://en.cppreference.com/w/cpp/language/types][CppRef-Types]]
+
+C++ является статически типизируемым языком
+
+** Целочисленные типы
+
+Ниже приведенные типы имеют не фиксированные размеры, которые зависят
+от операционной системы и архитектуры процессора.
+Существуют типы фиксированного размера:
+[[https://en.cppreference.com/w/cpp/types/integer][Fixed width integer types (since C++11)]]
+
+| type      | bytes |
+|-----------+-------|
+| short     |     2 |
+| int       |     4 |
+| long long |     8 |
+
+Также их unsigned версии: unsigned short, unsigned int,
+unsigned long long
+
+*** Операции
+Арифметические:
+- Сложение "+"
+- Вычитание "-"
+- Умножение "*"
+- Целочисленное деление "/"
+- Остаток от деления "%"
+
+Побитовые:
+- И "&"
+- ИЛИ "|"
+- Исключающее ИЛИ "^"
+
+*** Символьный тип
+#+BEGIN_SRC C++ :includes <iostream> :results raw
+  char c = 'a';
+  std::cout << c + 'b';
+#+END_SRC
+#+RESULTS:
+195
+
+Здесь происходит одна особенность, если над char'ами производятся
+какие-то действия, то результат будет int'ом
+
+#+BEGIN_SRC C++ :includes <iostream> :results raw
+  char c = 'a';
+  std::cout << c + 'b' << ' ' << c * '2';
+#+END_SRC
+#+RESULTS:
+195 4850
+
+** Типы с плавующей точкой
+ Аналогично целочисленным переменным, для фиксированного размера
+ смотри: [[https://en.cppreference.com/w/cpp/types/floating-point][Fixed width floating-point types (since C++23)]]
+
+ | type        | bytes |
+ |-------------+-------|
+ | float       |     4 |
+ | double      |     8 |
+ | long double |    16 |
+
+** Стандартные конверсии типов
+
+[[https://en.cppreference.com/w/cpp/language/implicit_conversion][Implicit conversions]]
+
+** Логический тип
+
+| type | bytes |
+|------+-------|
+| bool |     1 |
+
+Любое ненулевое число - true
+
